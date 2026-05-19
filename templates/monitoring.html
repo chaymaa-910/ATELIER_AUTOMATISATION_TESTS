@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Monitoring API</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial;
+            background:linear-gradient(135deg,#0f172a,#1e3a8a);
+            color:white;
+            text-align:center;
+        }
+
+        h1{
+            padding-top:40px;
+            font-size:48px;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            margin-top:40px;
+            background:white;
+            color:#111827;
+            border-radius:25px;
+            padding:40px;
+            box-shadow:0px 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .card{
+            background:#f3f4f6;
+            margin:20px;
+            padding:25px;
+            border-radius:20px;
+            font-size:24px;
+        }
+
+        .status{
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        footer{
+            margin-top:30px;
+            color:#d1d5db;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>📡 Monitoring API Météo</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="status">{{ status }}</div>
+        </div>
+
+        <div class="card">
+            ⏱ Temps de réponse : <strong>{{ response_time }} ms</strong>
+        </div>
+
+        <div class="card">
+            🌡 Température actuelle à Paris :
+            <strong>{{ temperature }} °C</strong>
+        </div>
+
+        <div class="card">
+            🕒 Dernière vérification :
+            <strong>{{ date }}</strong>
+        </div>
+
+    </div>
+
+    <footer>
+        Projet Monitoring API • Chaymaa Salmi
+    </footer>
+
+</body>
+
+</html>
